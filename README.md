@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
+# Trainee de React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto foi utilizado no **Trainee de Front-end** para ensinar sobre componentização, renderização e outros assuntos de React e desenvolvimento web para os novos membros da Dev. Community Mauá de 2024.
 
-Currently, two official plugins are available:
+# Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para executar esse projeto, você precisa ter o Node.js instalado na sua máquina. Você pode baixar o Node.js [aqui](https://nodejs.org/en/).
 
-## Expanding the ESLint configuration
+# Clone o repositório
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone o repositório para a sua máquina local usando **Git**.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/enzosakamoto/trainee-react.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Instalação
+
+Instale as dependências do projeto.
+
+```bash
+cd trainee-react
+npm install
+```
+
+# Execução
+
+Execute o projeto.
+
+```bash
+npm run dev
+```
+
+# Estrutura de pastas
+
+```bash
+.
+└── trainee-react/
+    ├── node_modules
+    ├── src/
+    │   ├── assets
+    │   ├── components/
+    │   │   ├── Button.tsx
+    │   │   └── Card.tsx
+    │   ├── styles/
+    │   │   ├── index.css
+    │   │   ├── App.css
+    │   │   ├── Button.css
+    │   │   └── Card.css
+    │   ├── App.tsx
+    │   └── main.tsx
+    ├── index.html
+    ├── .prettierrc
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    ├── vite.config.ts
+    ├── package.json
+    ├── package-lock.json
+    └── README.md
+```
+
+# Bibliotecas
+
+Já estão instaladas as seguintes bibliotecas:
+- **Prettier** (formatação de código)
+- **Eslint** (análise de código)
+- **Vite** (servidor de desenvolvimento)
+
+# Exercícios
+
+- Refaça os componentes desse material explorando novas formas de estilização e organização de código.
+- Crie um novo componente chamado `Forms` que renderiza um campo de texto e um botão de envio.
